@@ -6,9 +6,11 @@ const usersRoutes = require('./routes/userRoute')
 const logInRoutes = require('./routes/loginRoute')
 
 const mongoose = require('mongoose')
-
+const cors = require('cors')
 //express app
 const app = express()
+
+app.use(cors());
 
 app.use(express.json())
 //route
